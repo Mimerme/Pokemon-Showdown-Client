@@ -1,4 +1,8 @@
-Pokémon Showdown Client
+Pokémon Showdown Client - Mobile
+Fork Introduction
+------------------------------------------------------------------------
+This project is forked off of the original Pokemon Showdown Client, however will be modified to support mobile devices optimaly.
+
 ========================================================================
 
 Navigation: [Website][1] | [Server repository][2] | **Client repository**
