@@ -1,7 +1,7 @@
 /*********************************************************
  * Global
  *********************************************************/
-
+ 
 html, body {
 	margin: 0;
 	padding: 0;
@@ -1377,7 +1377,7 @@ div[class^='tournament-message-'], div[class*=' tournament-message-'] {
 	position: absolute;
 	top: 370px;
 	left: 0;
-	width: 640px;
+	width: 320px;
 }
 
 .battle-controls p {

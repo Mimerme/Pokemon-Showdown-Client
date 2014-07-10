@@ -10,10 +10,10 @@ License: GPLv2
 	position: absolute;
 	text-align: left;
 	top: 9px;
-	left: -1px;
+	left: -150px;
 	border: 1px solid #AAAAAA;
 	background: #CFD5DA;
-	width: 640px;
+	width: 330px;
 	height: 360px;
 	overflow: hidden;
 
@@ -22,7 +22,7 @@ License: GPLv2
 }
 .backdrop
 {
-	width: 700px;
+	width: 380px;
 	height: 500px;
 	position: absolute;
 	top: -90px;
@@ -41,7 +41,7 @@ License: GPLv2
 .innerbattle
 {
 	position: relative;
-	width: 640px;
+	width: 320px;
 	height: 360px;
 }
 .battle-log-add
@@ -368,9 +368,9 @@ License: GPLv2
 .leftbar
 {
 	position: absolute;
-	top: 0;
+	top: -270px;
 	left: 0;
-	height: 450px;
+	height: 0;
 	width: 100px;
 	background-color: #CCCCCC;
 	background-color: rgba(255,255,255,0.5);
@@ -380,9 +380,9 @@ License: GPLv2
 .rightbar
 {
 	position: absolute;
-	top: 0;
+	top: -145px;
 	right: 0;
-	height: 450px;
+	height: 0;
 	width: 100px;
 	background-color: #CCCCCC;
 	background-color: rgba(255,255,255,0.5);
@@ -409,7 +409,7 @@ License: GPLv2
 {
 	width: 86px;
 	height: 90px;
-	opacity: .7;
+	opacity: 1;
 	margin: 0 auto;
 	background: transparent none no-repeat scroll center top;
 }
@@ -441,7 +441,7 @@ License: GPLv2
 	position: absolute;
 	display: none;
 	top: 10px;
-	left: 110px;
+	left: 120px;
 	font-size: 13pt;
 	font-weight: bold;
 	margin: 0;
