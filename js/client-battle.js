@@ -151,27 +151,27 @@
 			var yourActive = this.battle.yourSide.active;
 			var buf = '';
 			if (yourActive[2]) {
-				buf += '<div style="position:absolute;top:70px;left:250px;width:80px;height:100px;"' + this.tooltipAttrs(yourActive[2].getIdent(), 'pokemon', true, 'foe') + '></div>';
+				buf += '<div style="position:absolute;top:70px;left:220px;width:80px;height:100px;"' + this.tooltipAttrs(yourActive[2].getIdent(), 'pokemon', true, 'foe') + '></div>';
 			}
 			if (yourActive[1]) {
-				buf += '<div style="position:absolute;top:85px;left:320px;width:90px;height:100px;"' + this.tooltipAttrs(yourActive[1].getIdent(), 'pokemon', true, 'foe') + '></div>';
+				buf += '<div style="position:absolute;top:85px;left:220px;width:90px;height:100px;"' + this.tooltipAttrs(yourActive[1].getIdent(), 'pokemon', true, 'foe') + '></div>';
 			}
 			if (yourActive[0]) {
-				buf += '<div style="position:absolute;top:90px;left:390px;width:100px;height:100px;"' + this.tooltipAttrs(yourActive[0].getIdent(), 'pokemon', true, 'foe') + '></div>';
+				buf += '<div style="position:absolute;top:90px;left:220px;width:100px;height:100px;"' + this.tooltipAttrs(yourActive[0].getIdent(), 'pokemon', true, 'foe') + '></div>';
 			}
 			if (myActive[0]) {
-				buf += '<div style="position:absolute;top:210px;left:130px;width:180px;height:160px;"' + this.tooltipAttrs(myActive[0].getIdent(), 'pokemon', true, true) + '></div>';
+				buf += '<div style="position:absolute;top:210px;left:20px;width:180px;height:160px;"' + this.tooltipAttrs(myActive[0].getIdent(), 'pokemon', true, true) + '></div>';
 			}
 			if (myActive[1]) {
-				buf += '<div style="position:absolute;top:210px;left:270px;width:160px;height:160px;"' + this.tooltipAttrs(myActive[1].getIdent(), 'pokemon', true, true) + '></div>';
+				buf += '<div style="position:absolute;top:210px;left:20px;width:160px;height:160px;swagger:swag;"' + this.tooltipAttrs(myActive[1].getIdent(), 'pokemon', true, true) + '></div>';
 			}
 			if (myActive[2]) {
-				buf += '<div style="position:absolute;top:210px;left:410px;width:140px;height:160px;"' + this.tooltipAttrs(myActive[2].getIdent(), 'pokemon', true, true) + '></div>';
+				buf += '<div style="position:absolute;top:210px;left:20px;width:140px;height:160px;swagger:swag;"' + this.tooltipAttrs(myActive[2].getIdent(), 'pokemon', true, true) + '></div>';
 			}
 			this.$foeHint.html(buf);
 
 			if (this.battle.done) {
-
+	
 				// battle has ended
 				this.$controls.html('<div class="controls"><p><em><button name="instantReplay"><i class="icon-undo"></i> Instant Replay</button> <button name="saveReplay"><i class="icon-upload"></i> Share replay</button></p></div>');
 

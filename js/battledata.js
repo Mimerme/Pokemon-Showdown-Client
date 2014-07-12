@@ -89,6 +89,7 @@ var colorCache = {};
 function hashColor(name) {
 	if (colorCache[name]) return colorCache[name];
 	var hash;
+
 	if (window.Config && Config.customcolors && Config.customcolors[name]) {
 		if (Config.customcolors[name].color) {
 			return colorCache[name] = 'color:' + Config.customcolors[name].color + ';';

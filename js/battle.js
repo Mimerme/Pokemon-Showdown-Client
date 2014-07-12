@@ -898,7 +898,7 @@ function Battle(frame, logFrame, noPreload) {
 		if (!loc.x) loc.x = 0;
 		if (!loc.y) loc.y = 0;
 
-		left = 70;
+		left = 50;
 		top = 245;
 		scale = 1;
 		scale = 1 - 0.1 * (loc.z / 200);
@@ -1004,7 +1004,7 @@ function Battle(frame, logFrame, noPreload) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
-		this.statbarOffset = 0;
+		this.statbarOffset = 10;
 		var pos = self.pos({
 			x: x,
 			y: y,
@@ -1860,7 +1860,7 @@ function Battle(frame, logFrame, noPreload) {
 			var gender = '';
 			if (pokemon.gender === 'F') gender = ' <small style="color:#C57575">&#9792;</small>';
 			if (pokemon.gender === 'M') gender = ' <small style="color:#7575C0">&#9794;</small>';
-			return '<div class="statbar"' + (selfS.n ? ' lstatbar' : ' style="display: block; left: 0px; top: 59px; opacity: 1;"') + '><strong>' + Tools.escapeHTML(pokemon.name) + gender + (pokemon.level === 100 ? '' : ' <small>L' + pokemon.level + '</small>') + '</strong><div class="hpbar"><div class="hptext"></div><div class="hptextborder"></div><div class="prevhp"><div class="hp"></div></div><div class="status"></div></div>';
+			return '<div class="statbar"' + (selfS.n ? ' lstatbar' : ' rstatbar') + '><strong>' + Tools.escapeHTML(pokemon.name) + gender + (pokemon.level === 100 ? '' : ' <small>L' + pokemon.level + '</small>') + '</strong><div class="hpbar"><div class="hptext"></div><div class="hptextborder"></div><div class="prevhp"><div class="hp"></div></div><div class="status"></div></div>';
 		};
 		this.switchIn = function (pokemon, slot) {
 			if (slot === undefined) slot = pokemon.slot;
@@ -1893,7 +1893,7 @@ function Battle(frame, logFrame, noPreload) {
 			if (self.fastForward) {
 				pokemon.statbarElem.css({
 					display: 'block',
-					left: pokemon.sprite.left - 80,
+					left: 0,
 					top: pokemon.sprite.top - 73 - pokemon.sprite.statbarOffset,
 					opacity: 1
 				});
@@ -1902,7 +1902,7 @@ function Battle(frame, logFrame, noPreload) {
 			}
 			pokemon.statbarElem.css({
 				display: 'block',
-				left: pokemon.sprite.left - 80,
+				left: 0,
 				top: pokemon.sprite.top - 53 - pokemon.sprite.statbarOffset,
 				opacity: 0
 			});
@@ -1956,7 +1956,7 @@ function Battle(frame, logFrame, noPreload) {
 			if (selfS.n == 0) {
 				if (oldpokemon) {
 					oldpokemon.statbarElem.animate({
-						left: pokemon.sprite.left - 130,
+						left: 030,
 						opacity: 0
 					}, 400, function () {
 						oldpokemon.statbarElem.remove();
@@ -1970,7 +1970,7 @@ function Battle(frame, logFrame, noPreload) {
 					opacity: 0
 				});
 				pokemon.statbarElem.delay(300).animate({
-					left: pokemon.sprite.left - 80,
+					left: 0,
 					opacity: 1
 				}, 400);
 			} else {
@@ -1985,12 +1985,12 @@ function Battle(frame, logFrame, noPreload) {
 				}
 				pokemon.statbarElem.css({
 					display: 'block',
-					left: pokemon.sprite.left - 130,
+					left: 030,
 					top: pokemon.sprite.top - 73 - pokemon.sprite.statbarOffset,
 					opacity: 0
 				});
 				pokemon.statbarElem.delay(300).animate({
-					left: pokemon.sprite.left - 80,
+					left: 0,
 					opacity: 1
 				}, 400);
 			}
@@ -2030,7 +2030,7 @@ function Battle(frame, logFrame, noPreload) {
 			selfS.updateStatbar(pokemon, true);
 			pokemon.statbarElem.css({
 				display: 'block',
-				left: pokemon.sprite.left - 80,
+				left: 0,
 				top: pokemon.sprite.top - 73 - pokemon.sprite.statbarOffset,
 				opacity: 1
 			});
@@ -2121,7 +2121,7 @@ function Battle(frame, logFrame, noPreload) {
 
 			pokemon.statbarElem.css({
 				display: 'block',
-				left: pokemon.sprite.left - 80,
+				left: 0,
 				top: pokemon.sprite.top - 73 - pokemon.sprite.statbarOffset,
 				opacity: 1
 			});
@@ -2175,7 +2175,7 @@ function Battle(frame, logFrame, noPreload) {
 
 			pokemon.statbarElem.css({
 				display: 'block',
-				left: pokemon.sprite.left - 80,
+				left: 0,
 				top: pokemon.sprite.top - 73 - pokemon.sprite.statbarOffset,
 				opacity: 1
 			});
