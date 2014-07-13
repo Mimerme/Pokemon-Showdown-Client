@@ -1375,7 +1375,7 @@ div[class^='tournament-message-'], div[class*=' tournament-message-'] {
 }
 .ps-room .battle-controls {
 	position: absolute;
-	top: 370px;
+	top: 400px;
 	left: 0;
 	width: 320px;
 }

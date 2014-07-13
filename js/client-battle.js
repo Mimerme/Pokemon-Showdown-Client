@@ -871,15 +871,17 @@
 				top: 500
 			};
 			if (elem) offset = $(elem).offset();
-			var x = offset.left - 2;
+			var x = 10;
+			//var x = offset.left - 2;
 			if (elem) {
 				if (ownHeight) offset = $(elem).offset();
 				else offset = $(elem).parent().offset();
 			}
-			var y = offset.top - 5;
-
-			if (x > 335) x = 335;
-			if (y < 140) y = 140;
+			//var y = offset.top - 5;
+			var y = 140;
+			
+			//if (x > 335) x = 335;
+			//if (y < 140) y = 140;
 			if (!$('#tooltipwrapper').length) $(document.body).append('<div id="tooltipwrapper"></div>');
 			$('#tooltipwrapper').css({
 				left: x,

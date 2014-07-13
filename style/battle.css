@@ -456,8 +456,8 @@ License: GPLv2
 	position: absolute;
 	display: none;
 	bottom: 10px;
-	left: 110px;
-	right: 110px;
+	left: 0px;
+	right: 0px;
 	color: #CCCCCC;
 	background: #222222;
 	background: rgba(0,0,0,0.75);
